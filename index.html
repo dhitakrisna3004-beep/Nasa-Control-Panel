@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Nasa Control Panel</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="panel">
+
+  <h1>🚀 NASA CONTROL PANEL</h1>
+
+  <div class="top">
+
+    <div class="card">
+      <h2>RADAR</h2>
+      <div class="radar">
+        <div class="line"></div>
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>SYSTEM STATUS</h2>
+
+      <p>Rocket Fuel:
+        <span id="fuel">100%</span>
+      </p>
+
+      <p>Signal:
+        <span id="signal">ONLINE</span>
+      </p>
+
+      <p>Threat Level:
+        <span id="threat">LOW</span>
+      </p>
+
+      <button onclick="launchMissile()">
+        Launch Missile
+      </button>
+
+      <button onclick="scanPlanet()">
+        Scan Planet
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="bottom">
+
+    <div class="card log-box">
+      <h2>MISSION LOG</h2>
+
+      <div id="logs">
+        > System Ready...
+      </div>
+    </div>
+
+  </div>
+
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
